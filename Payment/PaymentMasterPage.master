@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PaymentMasterPage.master.cs" Inherits="PaymentMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>PayBook Gateways</title>
+    <link rel="stylesheet" href="css/Style.css" />
+
+    <script type="text/javascript">
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode == 46 && charCode > 31
+              && (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+        }
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <div class="head-payMent">
+        <h2 id="pay-book-head"><a href="../Customer_new/CustomerHome.aspx" style="color: white">Treasure Box</a></h2>
+    </div>
+    
+    <div class="content-are">
+        <div class="content-are-head">Select Payment Method</div>
+        <div class="payment-trans-id" runat="server" id="trans_id"></div>
+        <div class="payment-details-from-redirect-page">
+            <div class="payment-details-from-redirect-page-amount">
+                <div class="payment-details-from-redirect-page-amount-head">
+                    Payment to be made
+                </div>
+                <div class="payment-details-from-redirect-page-amount-value" runat="server" id="trans_amount">
+                </div>
+            </div>
+        </div>
+        <div class="payment-details-payment-type">
+            <div class="payment-details-payment-type-list">
+                <ul id="payment-type-list">
+                    <li><a href="debitCard.aspx">Debit Card</a></li>
+                    <li><a href="creditCard.aspx">Credit Card</a></li>
+                    <li><a href="netBanking.aspx">Net Banking</a></li>
+                    <%--   <li><a href="#">ATM</a></li>
+                    <li><a href="#">IMPS</a></li>--%>
+                </ul>
+            </div>
+            <div class="payment-type-list-effect">
+            </div>
+            <div class="payment-details-Debit-card">
+                <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

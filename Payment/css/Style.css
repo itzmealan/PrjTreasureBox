@@ -1,0 +1,456 @@
+﻿body {
+    font-family:Arial;
+}
+
+a
+{
+    text-decoration:none;
+}
+
+.head-payMent
+{
+    width:100%;
+    height:110px;
+    background-color:#035988;
+    float:left;
+}
+
+#pay-book-head
+{
+    margin:29px 0 0 44px;
+    font-size:32px;
+    color:#fff;
+    float:left;
+}
+
+.content-are
+{
+    background-color: rgba(255, 255, 255, 1);
+    float: left;
+    height: 600px;
+    margin-left: 226px;
+    margin-top: -30px;
+    width: 990px;
+    border-left:1px #0094ff solid;
+    border-right:1px #0094ff solid;
+    border-bottom:1px #0094ff solid;
+    border-radius:14px;
+    
+}
+
+.content-are-head
+{
+    width:100%;
+    height:30px;
+    background-color:#21618f;
+    color:#fff;
+    text-align:center;
+    border-top-left-radius:11px;
+    border-top-right-radius:11px;
+    float:left;
+}
+
+.payment-details-from-redirect-page
+{
+    width:91%;
+    margin:30px 0 0 45px;
+    height:75px;
+    background-color:rgba(228, 227, 227,.3);
+    float:left;
+}
+
+#trans_id
+{
+    float:right;
+    text-align:right;
+    margin:24px 89px 0 0;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.payment-details-from-redirect-page-amount
+{
+    border:.4px solid;
+    float: left;
+    height: 54px;
+    margin: 10px 0 0 50px;
+    width: 170px;
+    background-color:#fff;
+    border-color:rgba(128, 128, 128,.2);
+    border-radius:3px;
+}
+
+.payment-details-from-redirect-page-amount-head
+{
+    font-family: times new roman;
+    font-size: 13px;
+    height: 10px;
+    margin: 5px 0 0 17px;
+    width: 140px;
+    float:left;
+}
+
+.payment-details-from-redirect-page-amount-value
+{
+    width:140px;
+    height:30px;
+    float:left;
+    margin: 10px 0 0 17px;
+    font-family: times new roman;
+    font-size: 19px;
+}
+
+.payment-details-payment-type
+{
+    float: left;
+    height: 380px;
+    margin: 30px 0 0 45px;
+    width: 91%;
+}
+
+.payment-details-payment-type-list
+{
+    float: left;
+    height: 360px;
+    width: 174px;
+}
+
+.payment-type-list-effect
+{
+    float: left;
+    height: 260px;
+    width: 2px;
+    background-color:rgba(128, 128, 128,0.5);
+    margin-left:11px;
+}
+
+#payment-type-list
+{
+    list-style:none;
+}
+
+#payment-type-list li
+{
+    display:inline-grid;
+    text-align:right;
+    margin-bottom:26px;
+    /*border-right:1px rgba(128, 128, 128,.4) solid;*/
+}
+
+#payment-type-list a
+{
+    display:block;
+    color:rgb(128, 128, 128);
+}
+
+#payment-type-list li:hover a
+{
+    color:#0094ff;
+}
+
+.payment-details-Debit-card {
+    float: left;
+    height: 360px;
+    margin-left: 31px;
+    width: 643px;
+}
+
+
+/*Start Debit Card area*/
+
+.payment-debit-card {
+    width:400px;
+    height:300px;
+    float:left;
+    padding-top:15px;
+}
+
+.payment-debit-num-head {
+    font-size:12px;
+    float:left;
+    color:rgb(128, 128, 128);
+    width:100%;
+}
+
+.payment-debit-number-main {
+    height: 28px;
+    width: 407px;
+    margin-top:8px;
+    border:1px solid;
+    border-color:rgba(128, 128, 128,0.3);
+    float:left;
+}
+
+.payment-debit-number {
+    float:left;
+    width:186px;
+    height:25px;
+}
+
+.payment-debit-card-type {
+    float: left;
+    height: 25px;
+    width: 221px;
+}
+
+.card-img {
+    height: 21px;
+    margin-top: 3px;
+    width: 220px;
+}
+
+.text-debit-card {
+    outline: none;
+    border:none;
+    /*margin-left: 13px;
+    margin-top: 4px;*/
+    width: 86%;
+    height:26px;
+    font-size:16px;
+}
+
+.text-debit-card:focus .payment-debit-number-main {
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.active {
+    background-color:#0094ff;
+}
+
+.payment-debit-card-info
+{
+    width:407px;
+    height:100px;
+    float:left;
+    margin-top:20px;
+}
+
+.payment-debit-card-info-head
+{
+    width:360px;
+    float:left;
+}
+
+.payment-debit-card-info-head-ex
+{
+    width:113px;
+    float:left;
+    color:rgb(128, 128, 128);
+    font-size:12px;
+}
+
+.payment-debit-card-info-head-cvv
+{
+    width:164px;
+    float:left;
+    margin-left:52px;
+    color:rgb(128, 128, 128);
+    font-size:12px;
+}
+
+.payment-debit-card-info-details
+{
+    width:300px;
+    float:left;
+}
+
+.payment-debit-card-info-details-date
+{
+    width:155px;
+    float:left;
+    margin-top:10px;
+}
+
+.select-debit-card-month, .select-debit-card-year
+{
+    float:left;
+    margin-right:10px;
+    height:35px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius:3px;
+}
+
+.payment-debit-card-info-details-cvv
+{
+    width:100px;
+    float:left;
+}
+
+.text-debit-card-cvv
+{
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius:3px;
+    font-size: 15px;
+    height: 31px;
+    margin-left: 10px;
+    margin-top: 10px;
+    outline: medium none; 
+    width: 57px;
+}
+
+.payment-debit-card-warning
+{
+    float: left;
+    margin-top: 20px;
+    width: 407px;
+}
+
+.payment-debit-card-warning-img
+{
+    width:20px;
+    height:20px;
+    float:left;
+    /*background-color:#0094ff;
+    border-radius: 15px;*/
+}
+
+.payment-debit-card-warning-img img
+{
+    width:20px;
+    height:20px;
+}
+
+.payment-debit-card-warning-msg
+{
+    float: right;
+    font-size: 11px;
+    height: 20px;
+    margin-top: 3px;
+    width: 380px;
+}
+
+.payment-debit-card-buttons
+{
+    float:left;
+    width:407px;
+    height:50px;
+    margin-top:25px;
+}
+
+.payment-debit-card-buttons-payment
+{
+    float:left;
+    width:180px;
+    
+}
+
+.payment-debit-card-buttons-cancel
+{
+    float:left;
+    width:100px;
+}
+
+.btn-pay-now
+{
+     background-color: #47b2ff;
+    border-radius: 4px;
+    border-style: none;
+    color: #fff;
+    height: 31px;
+    outline: medium none;
+    width: 166px;
+    font-size:15px;
+}
+
+.btn-pay-now:hover
+{
+    cursor:pointer;
+    
+}
+
+.payment-debit-card-buttons-cancel a
+{
+    float: left;
+    margin-top: 13px;
+    text-decoration-line:underline;
+    font-size:13px;
+    color:rgb(128, 128, 128);
+}
+
+.payment-debit-card-buttons-cancel a:hover
+{
+    color:#47b2ff;
+}
+
+.payment-secure
+{
+    color: rgba(128, 128, 128, 0.7);
+    float: right;
+    font-size: 9px;
+    height: 68px;
+    margin-top: -8px;
+    width: 134px;
+}
+
+.payment-secure img
+{
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+
+.payment-net-banking-content-area {
+    float: left;
+    height: 300px;
+    padding-top: 15px;
+    width: 600px;
+}
+
+.payment-net-banking-popular-head {
+    float:left;
+    color:rgb(128, 128, 128);
+    font-size:14px;
+}
+
+.payment-net-banking-other-head {
+    float:left;
+    color:rgb(128, 128, 128);
+    font-size:14px;
+    width:100%;
+}
+
+.payment-net-banking-popular-banks {
+    float:left;
+    width:600px;
+    height:128px;
+    margin-top:16px;
+}
+
+.popular-banks-sbi, .popular-banks-hdfc, 
+.popular-banks-icici, .popular-banks-citi,
+.popular-banks-axis, .popular-banks-pnb {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 8px;
+    float: left;
+    height: 36px;
+    margin-bottom: 23px;
+    margin-right: 20px;
+    width: 128px;
+}
+
+.payment-net-banking-popular-banks input[type="radio"] {
+    margin:10px 0 0 7px;
+    color:rgba(128, 128, 128, 0.7);
+    float:left;
+}
+
+.payment-net-banking-popular-banks img {
+    float: left;
+    height: 28px;
+    margin: 4px 0 0 5px;
+    width: 100px;
+}
+
+.payment-net-banking-other-banks {
+    float:left;
+    margin-top:16px;
+}
+
+.select-other-banks {
+    float:left;
+    height:35px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius:5px;
+    font-size: 14px;
+    z-index:-1000;
+}
